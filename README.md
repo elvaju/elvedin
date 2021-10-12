@@ -11,20 +11,20 @@ Clone this repository:
 
 Create virtualenv and install all requirements in **backend** directory:
 
-    cd elvedin_shop/backend/
+    cd elvedin/backend/
     python -m venv venv_name
     .venv_name\scripts\activate
     pip install -r requirements.txt
 
 Install all needed node_modules in **frontend** directory:
 
-    cd elvedin_shop/frontend/
+    cd elvedin/frontend/
     npm install
 
 Prepare database in postgreSQL
 
 
-Set up database connection in **elvedin_shop/backend/backend/settings.py** in DATABASES section:
+Set up database connection in **elvedin/backend/backend/settings.py** in DATABASES section:
 
     DATABASES = {
         'default': {
@@ -39,13 +39,13 @@ Set up database connection in **elvedin_shop/backend/backend/settings.py** in DA
 
 Fire up **backend** server:
 
-    cd elvedin_shop/backend/
+    cd elvedin/backend/
     python manage.py migrate
     python manage.py runserver
 
 Open another terminal for **frontend** server:
 
-    cd elvedin_shop/frontend/
+    cd elvedin/frontend/
     npm start
 
 ## Built With
